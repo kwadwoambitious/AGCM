@@ -1,0 +1,60 @@
+.loader {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  transform: translateX(150%);
+  left: -32px;
+  border-radius: 50%;
+  color: black;
+  background: currentColor;
+  box-shadow: 32px 0 , -32px 0 ,  64px 0;
+}
+
+.loader::after {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background:#FFFF00;
+  animation: move 3s linear infinite alternate;
+}
+
+@keyframes move {
+  0% , 5%{
+    left: -32px;
+    width: 10px;
+  }
+  15% , 20%{
+    left: -32px;
+    width: 48px;
+  }
+  30% , 35%{
+    left: 0px;
+    width: 10px;
+  }
+  45% , 50%{
+    left: 0px;
+    width: 48px;
+  }
+  60% , 65%{
+    left: 32px;
+    width: 10px;
+  }
+
+  75% , 80% {
+    left: 32px;
+    width: 48px;
+  }
+  95%, 100% {
+    left: 64px;
+    width: 10px;
+  }
+}
+.bg-background-image {
+  background-image: url('./assets/Group.png');
+  background-size: cover;
+  background-position: center;
+}
