@@ -29,4 +29,10 @@ export const SocialMediaData = [
     "social-name": "TikTok",
     "social-username": "@agcmknust",
   },
+  {
+    "social-url": "https://t.me/agcmknust_tg",
+    "social-image-link": "./assets/telegram.png",
+    "social-name": "Telegram",
+    "social-username": "@agcmknust",
+  },
 ];
